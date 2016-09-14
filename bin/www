@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+"use strict";
+require("babel-register");
+require("babel-polyfill");
+
+// must use .default since everything after uses the ES6 conventions
+let app = require('../app').default;
